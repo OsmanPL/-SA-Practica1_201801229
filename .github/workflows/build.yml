@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Cambiar directorio de trabajo cliente
-        run: cd ./Practica4/cliente
+        run: cd ../../Practica4/cliente
 
       - name: Checkout del código fuente
         uses: actions/checkout@v2
@@ -25,7 +25,7 @@ jobs:
         run: npm pack
       
       - name: Cambiar directorio de trabajo restaurante
-        run: cd ./Practica4/restaurante
+        run: cd ../../Practica4/restaurante
 
       - name: Checkout del código fuente
         uses: actions/checkout@v2
@@ -40,7 +40,7 @@ jobs:
         run: npm pack
 
       - name: Cambiar directorio de trabajo repartidor
-        run: cd ./Practica4/repartidor
+        run: cd ../../Practica4/repartidor
 
       - name: Checkout del código fuente
         uses: actions/checkout@v2
@@ -55,7 +55,7 @@ jobs:
         run: npm pack
       
       - name: Cambiar directorio de trabajo esb
-        run: cd ./Practica4/esb
+        run: cd ../../Practica4/esb
 
       - name: Checkout del código fuente
         uses: actions/checkout@v2
