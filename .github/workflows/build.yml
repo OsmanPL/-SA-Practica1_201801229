@@ -1,0 +1,70 @@
+name: Construir artefacto
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Cambiar directorio de trabajo cliente
+        run: cd ./Practica4/cliente
+
+      - name: Checkout del código fuente
+        uses: actions/checkout@v2
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Construir artefacto
+        run: npm run build
+
+      - name: Empaquetar artefacto
+        run: npm pack
+      
+      - name: Cambiar directorio de trabajo restaurante
+        run: cd ./Practica4/restaurante
+
+      - name: Checkout del código fuente
+        uses: actions/checkout@v2
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Construir artefacto
+        run: npm run build
+
+      - name: Empaquetar artefacto
+        run: npm pack
+
+      - name: Cambiar directorio de trabajo repartidor
+        run: cd ./Practica4/repartidor
+
+      - name: Checkout del código fuente
+        uses: actions/checkout@v2
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Construir artefacto
+        run: npm run build
+
+      - name: Empaquetar artefacto
+        run: npm pack
+      
+      - name: Cambiar directorio de trabajo esb
+        run: cd ./Practica4/esb
+
+      - name: Checkout del código fuente
+        uses: actions/checkout@v2
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Construir artefacto
+        run: npm run build
+
+      - name: Empaquetar artefacto
+        run: npm pack
