@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Cambiar directorio de trabajo cliente
-        run: cd ../../Practica4/cliente
+        run: cd Practica4/cliente
 
       - name: Checkout del código fuente
         uses: actions/checkout@v2
