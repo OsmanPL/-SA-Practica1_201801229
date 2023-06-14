@@ -13,49 +13,30 @@ jobs:
       - name: Checkout del código fuente
         uses: actions/checkout@v2
 
-      - name: Cambiar directorio de trabajo cliente
+      - name: Artefacto Cliente
         run: |
             cd Practica4/cliente
             npm install
-
-      - name: Construir artefacto
-        run: npm run build
-
-      - name: Empaquetar artefacto
-        run: npm pack
+            npm run build
+            npm pack
       
-      - name: Cambiar directorio de trabajo restaurante
-        run: cd ../../Practica4/restaurante
-
-      - name: Instalar dependencias
-        run: npm install
-
-      - name: Construir artefacto
-        run: npm run build
-
-      - name: Empaquetar artefacto
-        run: npm pack
-
-      - name: Cambiar directorio de trabajo repartidor
-        run: cd ../../Practica4/repartidor
-
-      - name: Instalar dependencias
-        run: npm install
-
-      - name: Construir artefacto
-        run: npm run build
-
-      - name: Empaquetar artefacto
-        run: npm pack
+      - name: Artefacto Restaurante
+        run: |
+            cd Practica4/restaurante
+            npm install
+            npm run build
+            npm pack
       
-      - name: Cambiar directorio de trabajo esb
-        run: cd ../../Practica4/esb
-
-      - name: Instalar dependencias
-        run: npm install
-
-      - name: Construir artefacto
-        run: npm run build
-
-      - name: Empaquetar artefacto
-        run: npm pack
+      - name: Artefacto Repartidor
+        run: |
+            cd Practica4/repartidor
+            npm install
+            npm run build
+            npm pack
+      
+      - name: Artefacto ESB
+        run: |
+            cd Practica4/esb
+            npm install
+            npm run build
+            npm pack
