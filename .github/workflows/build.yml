@@ -14,10 +14,9 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Cambiar directorio de trabajo cliente
-        run: cd Practica4/cliente
-
-      - name: Instalar dependencias
-        run: npm install
+        run: |
+            cd Practica4/cliente
+            npm install
 
       - name: Construir artefacto
         run: npm run build
@@ -51,7 +50,7 @@ jobs:
       
       - name: Cambiar directorio de trabajo esb
         run: cd ../../Practica4/esb
-        
+
       - name: Instalar dependencias
         run: npm install
 
