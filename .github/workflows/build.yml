@@ -30,5 +30,5 @@ jobs:
       
       - name: Artefacto ESB
         run: |
-            cd Practica4/esb
+            cd Practica4/ESB
             npm install
