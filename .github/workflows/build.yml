@@ -17,26 +17,18 @@ jobs:
         run: |
             cd Practica4/cliente
             npm install
-            npm run build
-            npm pack
       
       - name: Artefacto Restaurante
         run: |
             cd Practica4/restaurante
             npm install
-            npm run build
-            npm pack
       
       - name: Artefacto Repartidor
         run: |
             cd Practica4/repartidor
             npm install
-            npm run build
-            npm pack
       
       - name: Artefacto ESB
         run: |
             cd Practica4/esb
             npm install
-            npm run build
-            npm pack
