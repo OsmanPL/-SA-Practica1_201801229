@@ -41,22 +41,22 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
             name: Artefacto Cliente
-            path: Practica4\cliente\cliente-1.0.0.tgz
+            path: Practica4/cliente/cliente-1.0.0.tgz
 
       - name: Empaquetar artefacto restaurante
         uses: actions/upload-artifact@v2
         with:
             name: Artefacto restaurante
-            path: Practica4\restaurante\restaurante-1.0.0.tgz
+            path: Practica4/restaurante/restaurante-1.0.0.tgz
 
       - name: Empaquetar artefacto repartidor
         uses: actions/upload-artifact@v2
         with:
             name: Artefacto repartidor
-            path: Practica4\repartidor\repartidor-1.0.0.tgz
+            path: Practica4/repartidor/repartidor-1.0.0.tgz
 
       - name: Empaquetar artefacto esb
         uses: actions/upload-artifact@v2
         with:
             name: Artefacto esb
-            path: Practica4\ESB\esb-1.0.0.tgz
+            path: Practica4/ESB/esb-1.0.0.tgz
